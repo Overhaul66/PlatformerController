@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://gun.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Node2D.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="player" type="Sprite" parent="."]
+scale = Vector2( 0.40625, 1 )
+texture = ExtResource( 3 )
+
+[node name="gun" parent="." instance=ExtResource( 1 )]
